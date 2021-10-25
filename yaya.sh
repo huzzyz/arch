@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /opt && git clone https://aur.archlinux.org/yay-git.git
+cd /opt && sudo git clone https://aur.archlinux.org/yay-git.git
 sudo chown -R $USER:$GROUP ./yay-git
 cd yay-git && makepkg -si --noconfirm
 yay --sudoloop --save && cd ~/
